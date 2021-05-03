@@ -25,6 +25,7 @@ export default {
         oil: 100
       }
     }
-  }
+  },
+  
 }
 </script>

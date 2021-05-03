@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '@/views/Home.vue'
 import Meals from '@/views/Meals.vue';
 import Restaurants from '@/views/Restaurants.vue';
+import Formula from '@/views/Formula.vue';
 
 Vue.use(VueRouter)
 
@@ -21,6 +22,12 @@ const routes = [
     path: '/restaurants',
     name: 'Restaurants',
     component: Restaurants
+  },
+  {
+    path: '/formula/:resultMeals',
+    name: 'Formula',
+    component: Formula,
+    props: true
   }
 ]
 

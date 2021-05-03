@@ -47,15 +47,14 @@ export default {
     async storeJoke () {
       try {
         const joke = await axios('https://api.jokes.one/jod?category=knock-knock');
-
-        this.jod = joke.contents.jokes[0].joke.text;
+        this.jod = joke.data.contents.jokes[0].joke.text;
       } catch (err) {
         this.jod = 'Ouch! Can\'t get the Joke of the Day for this store...'
       }
     }
   },
-  // async mounted () {
-  //   await this.storeJoke();
-  // }
+  async mounted () {
+    await this.storeJoke();
+  }
 }
 </script>
