@@ -49,7 +49,12 @@
     <div style="padding-top: 10%">
       <Banner :text="firstMessage + numMeals" />
     </div>
-    
+    <div style="padding-top: 10%">
+      <h2>
+        You can see our marketing campaign in this link
+        <router-link :to="{ name: 'CampaignSite' }">Site</router-link>
+      </h2>
+    </div>
   </div>
 </template>
 
