@@ -4,6 +4,7 @@ import Home from '@/views/Home.vue'
 import Meals from '@/views/Meals.vue';
 import Restaurants from '@/views/Restaurants.vue';
 import Formula from '@/views/Formula.vue';
+import CampaignSite from '@/views/CampaignSite.vue';
 
 Vue.use(VueRouter)
 
@@ -27,6 +28,12 @@ const routes = [
     path: '/formula/:resultMeals',
     name: 'Formula',
     component: Formula,
+    props: true
+  },
+  {
+    path: '/campaign',
+    name: 'CampaignSite',
+    component: CampaignSite,
     props: true
   }
 ]

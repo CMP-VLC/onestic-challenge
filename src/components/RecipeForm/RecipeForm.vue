@@ -99,8 +99,7 @@ export default {
     let resultBacon = Math.floor(this.bacon / this.ingredients.bacon);
 
     let totalResult = Math.min(resultEggs, resultPasta, resultButter, resultMilk, resultOil, resultBacon);
-    console.log(resultEggs, resultPasta, resultButter, resultMilk, resultOil, resultBacon)
-    console.log(totalResult)
+
     this.$router.push({name: 'Formula', params:{resultMeals : totalResult, ingredientsList: this.ingredients}})
     },
   },
