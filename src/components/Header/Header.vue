@@ -10,6 +10,9 @@
       <li class="header__navigation-item">
         <router-link to="/restaurants" class="header__navigation-item-link">Our Restaurants</router-link>
       </li>
+      <li class="header__navigation-item">
+        <button @click="btnStyle">Light - Dark Mode</button>
+      </li>
     </ul>
   </div>
 </template>
@@ -18,6 +21,13 @@
 </style>
 <script>
 export default {
-  name: 'Header'
+  name: 'Header',
+  methods: {
+    btnStyle() {
+    var styleMode = document.body; 
+    styleMode.classList.toggle("dark"); 
+      
+    },
+  },
 }
 </script>

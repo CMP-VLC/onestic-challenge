@@ -55,8 +55,7 @@ export default {
   },
 
   mounted() {
-    console.log(this.stores);
-    const setTimer = () =>
+   const setTimer = () =>
       setTimeout(() => {
         this.currentTime = moment().format("dddd, MMMM Do YYYY, h:mm:ss a");
         setTimer();
